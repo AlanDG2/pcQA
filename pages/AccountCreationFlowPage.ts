@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { step } from '../utilities/decoators';
+import { step } from '../utilities/decorators';
 
 export interface AccountData {
   companyName: string;
