@@ -2,3 +2,4 @@ node_modules/
 generated-email.txt
 .claude/
 test-results/
+playwright-report/
