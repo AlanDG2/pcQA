@@ -6,7 +6,8 @@
       "Bash(npx playwright install)",
       "Bash(mkdir:*)",
       "Bash(npx playwright test)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(git rm:*)"
     ],
     "deny": [],
     "ask": []
