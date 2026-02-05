@@ -4,7 +4,9 @@
       "Bash(npm init -y)",
       "Bash(npm install:*)",
       "Bash(npx playwright install)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(npx playwright test)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []

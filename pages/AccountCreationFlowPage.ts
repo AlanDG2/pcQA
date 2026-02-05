@@ -37,12 +37,12 @@ export class AccountCreationFlowPage {
   private readonly createAccountButton = () => this.page.getByRole('button', { name: 'Crear cuenta' });
   private readonly institutionTypeSelector = () => this.page.locator('app-selector').filter({ hasText: 'Tipo de institución*' }).getByRole('button');
   private readonly currencySelector = () => this.page.locator('app-selector').filter({ hasText: 'Moneda* Seleccionar opciones' }).getByRole('button');
-  private readonly timezoneSelector = () => this.page.getByRole('button', { name: 'Seleccionar opciones... ' });
+  private readonly timezoneSelector = () => this.page.locator('app-selector[label="Zona horaria*"] button')
   private readonly companyNameInput = () => this.page.locator('precredit-input').filter({ hasText: 'Razón social / Nombre' }).getByPlaceholder('Ingresar');
   private readonly nitInput = () => this.page.locator('precredit-input').filter({ hasText: 'NIT*' }).getByPlaceholder('Ingresar');
   private readonly representativeInput = () => this.page.getByRole('textbox', { name: 'Ingresar' }).nth(3);
   private readonly phoneInput = () => this.page.getByRole('textbox', { name: 'Teléfono*' });
-  private readonly continueButton = () => this.page.getByRole('button', { name: 'Continuar' });
+  private readonly continueButton = () => this.page.getByRole('button', { name: 'Continuar' }).nth(0);
 
   private readonly addAdminButton = () => this.page.getByRole('button', { name: 'Agregar administrador' });
   private readonly adminFullNameInput = () => this.page.locator('precredit-input').filter({ hasText: 'Nombre completo* Este campo' }).getByPlaceholder('Ingresar');

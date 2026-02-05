@@ -71,7 +71,7 @@ export class TestDataHelper {
         phone: faker.string.numeric(8),
         address: faker.location.streetAddress(),
         managerName: faker.person.firstName(),
-        position: faker.person.jobTitle()
+        position: faker.person.jobTitle().substring(0, 30)
       },
       config: {
         institutionType: 'Cooperativa',

@@ -7,7 +7,7 @@ import * as path from 'path';
 test('Create new account with complete configuration', async ({ page }) => {
   const testData = TestDataHelper.generateTestData();
   const accountFlow = new AccountCreationFlowPage(page);
-  
+
   await accountFlow.goto();
   await accountFlow.login(testData.login.email, testData.login.password);
   await accountFlow.createAccountWithBasicInfo(testData.account, testData.config.institutionType, testData.config.currency, testData.config.timezone);
